@@ -16,6 +16,334 @@
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../paginas/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                >
+                  Iniciar Sesion
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal2"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Iniciar Sesion
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail2" class="form-label"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail2"
+                              aria-describedby="emailHelp"
+                              required
+                              maxlength="25"
+                              minlength="10"
+                              placeholder="dominio354@gmail.com"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputPassword3"
+                              class="form-label"
+                              >Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword3"
+                              required
+                            />
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <button
+                              type="submit"
+                              class="btn btn-outline-secondary"
+                            >
+                              Enviar
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Registrarse
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Registrarse
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label"
+                              >Usuario</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail"
+                              aria-describedby="emailHelp"
+                              required
+                              maxlength="10"
+                              minlength="5"
+                              placeholder="JLM224"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                              required
+                              maxlength="25"
+                              minlength="10"
+                              placeholder="dominio354@gmail.com"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword" class="form-label"
+                              >Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword"
+                              required
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputPassword1"
+                              class="form-label"
+                              >Repetir Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                              required
+                            />
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <button
+                              type="submit"
+                              class="btn btn-outline-secondary"
+                            >
+                              Enviar
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mx-5 my-5">
+              <form class="border p-3">
+                <h3 class="text-center">Contacto</h3>
+                <div class="mb-3">
+                  <label for="exampleInputEmail4" class="form-label"
+                    >Nombre y Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail4"
+                    aria-describedby="emailHelp"
+                    required
+                    maxlength="15"
+                    minlength="5"
+                    placeholder="Juan Perez"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail5" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail5"
+                    aria-describedby="emailHelp"
+                    required
+                    maxlength="25"
+                    minlength="10"
+                    placeholder="dominio354@gmail.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail6" class="form-label"
+                    >Consulta</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail6"
+                    aria-describedby="emailHelp"
+                    required
+                    maxlength="100"
+                    minlength="10"
+                    placeholder="Escribe tu consulta"
+                  />
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-outline-secondary">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-5 my-5">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.7596359359595!2d-65.2188404255653!3d-26.815781089158854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d7db096b939%3A0xa051106deb6b822d!2sGral%20paz%20576!5e0!3m2!1ses!2sar!4v1736897617603!5m2!1ses!2sar"
+                width="400"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <img
+              src="https://i.blogs.es/ceda9c/dalle/450_1000.jpg"
+              width="130px"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <ul>
+              <li class="nav-link"><a href=""></a>Facebook</li>
+              <li class="nav-link"><a href=""></a>Instagram</li>
+              <li class="nav-link"><a href=""></a>Tik Tok</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <ul>
+              <li class="nav-link"><a href=""></a>Trabaja con Nosotros</li>
+              <li class="nav-link"><a href=""></a>T&C</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.7596359359595!2d-65.2188404255653!3d-26.815781089158854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d7db096b939%3A0xa051106deb6b822d!2sGral%20paz%20576!5e0!3m2!1ses!2sar!4v1736895395662!5m2!1ses!2sar"
+              width="200px"
+              height="200px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- CDN de Js de Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
